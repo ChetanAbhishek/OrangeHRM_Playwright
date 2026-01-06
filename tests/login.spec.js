@@ -6,4 +6,5 @@ test('OrangeHRM Login', async ({ page }) => {
   const login = new LoginPage(page);
   await login.login('Admin', 'admin123');
   await expect(page).toHaveURL(/dashboard/);
+  //login page
 });
